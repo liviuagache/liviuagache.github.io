@@ -147,7 +147,97 @@ body{
   #book-now:hover{
     background-color:var(--orange);
   }
-  @media screen and (max-width:600px){
+  /* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  #video{
+    width: 450px;
+  }
+  .text{
+    width:450px;
+  }
+  .flex-container{
+    flex-direction:column;
+  }
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  #video{
+    width: 600px;
+  }
+  .text{
+    width:600px;
+  }
+  .flex-container{
+    flex-direction:column;
+  }
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  #video{
+    width: 600px;
+  }
+  .text{
+    width:600px;
+  }
+  .flex-container{
+    flex-direction:column;
+  }
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  #video{
+    width: 300px;
+  }
+  .text{
+    width:300px;
+  }
+  .flex-container{
+    flex-direction:column;
+  }
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  #video{
+    width: 550px;
+  }
+  .text{
+    width:550px;
+  }
+  .flex-container{
+    flex-direction:column;
+  }
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+  #video{
+    width: 650px;
+  }
+  .text{
+    width:650px;
+  }
+  .flex-container{
+    flex-direction:column;
+  }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  #video{
+    width: 750px;
+  }
+  .text{
+    width:750px;
+  }
+  .flex-container{
+    flex-direction:column;
+  }
+}
+/*  @media screen and (max-width:600px){
     .flex-container{
       flex-direction:column;
     }
@@ -158,4 +248,4 @@ body{
     .text{
       width:400px;
     }
-  }
+  } */
