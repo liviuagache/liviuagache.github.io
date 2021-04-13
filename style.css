@@ -161,6 +161,7 @@ body{
   }
   .flex-container{
     flex-direction:column;
+    margin:auto;
   }
 }
 
@@ -178,6 +179,7 @@ body{
   }
   .flex-container{
     flex-direction:column;
+    margin:auto;
   }
 }
 
@@ -195,6 +197,7 @@ body{
   }
   .flex-container{
     flex-direction:column;
+    margin:auto;
   }
 }
 
@@ -212,6 +215,7 @@ body{
   }
   .flex-container{
     flex-direction:column;
+    margin:auto;
   }
 }
 
@@ -229,6 +233,7 @@ body{
   }
   .flex-container{
     flex-direction:column;
+    margin:auto;
   }
 }
 
@@ -246,6 +251,7 @@ body{
   }
   .flex-container{
     flex-direction:column;
+    margin:auto;
   }
 }
 
@@ -263,6 +269,7 @@ body{
   }
   .flex-container{
     flex-direction:column;
+    margin:auto;
   }
 }
 /*  @media screen and (max-width:600px){
