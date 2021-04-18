@@ -36,12 +36,12 @@ header {
 #linkList {
     display: flex;
     justify-content: center;
-    margin-left: -200px;
+    margin-left: -50%;
 }
 #linklist ul {
     position: fixed;
     line-height: 2em;
-    margin-top: 100px;
+    margin-top: 15%;
 }
 #linklist li {
     list-style-type: square;
