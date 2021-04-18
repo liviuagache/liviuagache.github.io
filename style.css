@@ -1,286 +1,42 @@
-body{
-    --bg-dark:#ccc;
-    --bg-light:#ddd;
-    --text:#555;
-    --orange:#e5b55b;
-    font-family:Verdana;
-    background-color:var(--bg-light)
-  }
-  h1{
-    font-size:1.3em;
-  }
-  p{
-    font-size:0.7em;
-  }
-  .header-img{
-    width:100%;
-    background-color:var(--bg-dark);
-    overflow:hidden;
-    position:fixed;
-    padding:5px;
-  }
-  #header-img{
-    width:100px;
-    margin:auto;
-    margin-left:30px;
-    display:block;
-    float:left;
-  }
-  .nav-bar{
-    overflow:hidden;
-    position:fixed;
-    width:100%;
-    top:42px;
-    margin-right:-100px;
-  }
-  .nav-link{
-    color:white;
-    text-decoration:none;
-    text-align:center;
-    display:block;
-    margin-top:-18px;
-    margin-right:30px;
-    font-size:18px;
-    padding:10px 20px;
-    float:right;
-    border-radius:50px;
-    transition:background .5s ease, text-shadow .5s ease;
-  }
-  .nav-link:hover{
-    background-color:var(--orange);
-    text-shadow: 0px 0px 10px black;
-    border-radius:50px;
-  }
-  .title{
-    margin-top:150px;
-    margin-bottom:100px;
-    color:var(--text);
-    text-align:center;
-  }
-  #email{
-    display:block;
-    margin:auto;
-    width:180px;
-    padding:8px;
-    border-radius:50px;
-    border:none;
-    background-color:var(--orange);
-    font-size:15px;
-    transition: width .5s ease, background .5s ease;
-  }
-  #email::placeholder{
-    color:white;
-    opacity:50%;
-  }
-  #email:hover{
-    background-color:var(--bg-dark);
-    width:300px;
-  }
-  #submit{
-    display:block;
-    margin:auto;
-    padding:8px;
-    border:none;
-    border-radius:50px;
-    width:80px;
-    background-color:var(--orange);
-    margin-top:20px;
-    color:white;
-    font-size:15px;
-    transition:background .5s ease;
-  }
-  #submit:hover{
-    background-color:var(--bg-dark);
-  }
-  .text{
-    width:90%;
-    margin:auto;
-    color:var(--text);
-    margin-top:100px;
-    transition:text-shadow .5s ease;
-  }
-  .text:hover{
-    text-shadow:0px 0px 2px var(--orange);
-  }
-  #video{
-    margin:auto;
-    display:block;
-    margin-top:100px;
-    margin-bottom:100px;
-    background-color:var(--orange);
-    padding:10px;
-    border-radius:15px;
-  }
-  .flex-container{
-    display:flex;
-    justify-content:center;
-    text-align:center;
-    width:100%;
-    
-  }
-  .barbers{
-    background-color:var(--bg-dark);
-    transition:box-shadow .5s ease;
-  }
-  .barbers:hover{
-    box-shadow:0 0 32px var(--bg-dark);
-  }
-  .barber-img{
-    padding:10px;
-    background-color:#bbb;
-  }
-  .barber-name{
-    color:var(--text);
-  }
-  .book-now{
-    margin-bottom:10px;
-  }
-  #book-now{
-    background-color:var(--bg-dark);
-    border:none;
-    width:100%;
-    color:white;
-    font-size:15px;
-    padding:15px;
-    transition:background .5s ease;
-  }
-  #book-now:hover{
-    background-color:var(--orange);
-  }
-  /* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 480px) and (orientation: portrait){
-  #video{
-    width: 450px;
-  }
-  .nav-link{
-    width:100%;
-    margin:auto;
-  }
-  .text{
-    width:450px;
-  }
-  .flex-container{
-    flex-direction:column;
-    margin:auto;
-  }
+:root {
+    --main-white:  #fafefe;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
 }
-
-/* #### Mobile Phones Landscape #### */
-@media screen and (max-device-width: 640px) and (orientation: landscape){
-  #video{
-    width: 600px;
-  }
-  .nav-link{
-    width:100%;
-    margin:auto;
-  }
-  .text{
-    width:600px;
-  }
-  .flex-container{
-    flex-direction:column;
-    margin:auto;
-  }
+body {
+    color: var(--main-white);
+    background-color: black;
+    background-image: linear-gradient(0deg, #3a3d40 0%, #181719 100%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
 }
-
-/* #### Mobile Phones Portrait or Landscape #### */
-@media screen and (max-device-width: 640px){
-  #video{
-    width: 600px;
-  }
-  .nav-link{
-    width:100%;
-    margin:auto;
-  }
-  .text{
-    width:600px;
-  }
-  .flex-container{
-    flex-direction:column;
-    margin:auto;
-  }
+header {
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-decoration-line: underline;
+    text-decoration-color: var(--main-red);
 }
-
-/* #### iPhone 4+ Portrait or Landscape #### */
-@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
-  #video{
-    width: 300px;
-  }
-  .nav-link{
-    width:100%;
-    margin:auto;
-  }
-  .text{
-    width:300px;
-  }
-  .flex-container{
-    flex-direction:column;
-    margin:auto;
-  }
+#linkList {
+    display: flex;
+    justify-content: center;
+    margin-left: -200px;
 }
-
-/* #### iPhone 5 Portrait or Landscape #### */
-@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
-  #video{
-    width: 550px;
-  }
-  .nav-link{
-    width:100%;
-    margin:auto;
-  }
-  .text{
-    width:550px;
-  }
-  .flex-container{
-    flex-direction:column;
-    margin:auto;
-  }
+#linklist ul {
+    position: fixed;
+    line-height: 2em;
 }
-
-/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
-@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
-  #video{
-    width: 650px;
-  }
-  .nav-link{
-    width:100%;
-    margin:auto;
-  }
-  .text{
-    width:650px;
-  }
-  .flex-container{
-    flex-direction:column;
-    margin:auto;
-  }
+#linklist li {
+    background-color: bisque;
 }
-
-/* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
-  #video{
-    width: 750px;
-  }
-  .nav-link{
-    width:100%;
-    margin:auto;
-  }
-  .text{
-    width:750px;
-  }
-  .flex-container{
-    flex-direction:column;
-    margin:auto;
-  }
+#linklist a {
+    color: cornflowerblue;
+    position: fixed;
+    text-decoration: none;
+    transition: .5s ease;
 }
-/*  @media screen and (max-width:600px){
-    .flex-container{
-      flex-direction:column;
-    }
-    .nav-link{
-      width:100%;
-      margin:auto;
-    }
-    .text{
-      width:400px;
-    }
-  } */
+#linklist a:hover {
+    font-size: x-large;
+}
