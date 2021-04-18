@@ -7,15 +7,15 @@
 body {
     color: var(--main-white);
     background-color: black;
-    background-image: linear-gradient(0deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient(0deg, #485460 0%, #1e272e 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: auto;
 }
 header {
     text-align: center;
     font-size: xx-large;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    text-shadow: 0 0 20px black;
+    margin-top: 100px;
     text-decoration-line: underline;
     text-decoration-color: var(--main-red);
 }
@@ -27,12 +27,15 @@ header {
 #linklist ul {
     position: fixed;
     line-height: 2em;
+    margin-top: 200px;
 }
 #linklist li {
-    background-color: bisque;
+    list-style-type: square;
+    color: var(--main-red);
 }
 #linklist a {
     color: cornflowerblue;
+    text-shadow: 0 0 5px black;
     position: fixed;
     text-decoration: none;
     transition: .5s ease;
