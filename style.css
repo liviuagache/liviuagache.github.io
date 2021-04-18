@@ -4,18 +4,32 @@
     --main-blue: #45567d;
     --main-gray: #303841;
 }
-body {
+.bgimage{
+    background-image: url(images/bg-trianglify.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: x-large;
+}
+body, html {
     color: var(--main-white);
     background-color: black;
     background-image: linear-gradient(0deg, #485460 0%, #1e272e 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: auto;
+    margin: 0;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
 }
 header {
     text-align: center;
     font-size: xx-large;
     text-shadow: 0 0 20px black;
-    margin-top: 100px;
     text-decoration-line: underline;
     text-decoration-color: var(--main-red);
 }
@@ -27,7 +41,7 @@ header {
 #linklist ul {
     position: fixed;
     line-height: 2em;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 #linklist li {
     list-style-type: square;
@@ -41,5 +55,5 @@ header {
     transition: .5s ease;
 }
 #linklist a:hover {
-    font-size: x-large;
+    font-size: xx-large;
 }
