@@ -1,59 +1,40 @@
 :root {
-    --main-white:  #fafefe;
-    --main-red: #be3144;
-    --main-blue: #45567d;
-    --main-gray: #303841;
+    --white:  #dfe6e9;
+    --dark-white: #b2bec3;
+    --gray: #636e72;
+    --dark-gray: #2d3436;
+    --red: #d63031;
+    --light-red: #ff7675;
+    --orange: #fdcb6e;
+    --dark-orange: #e17055;
+    --light-blue: #74b9ff;
+    --blue: #0984e3;
 }
-.bgimage{
+a:link, a:visited, a:hover, a:active {
+    color: var(--main-blue);
+    text-decoration: none;
+}
+body, html {
+    background-color: black;
+    background-image: linear-gradient(0deg, #485460 0%, #1e272e 100%);
     background-image: url(images/bg-trianglify.png);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: x-large;
-}
-body, html {
-    color: var(--main-white);
-    background-color: black;
-    background-image: linear-gradient(0deg, #485460 0%, #1e272e 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
+    font-size: x-large;
+    color: var(--main-white);
 }
-.caption {
-    position: absolute;
-    left: 0;
-    top: 20%;
-    width: 100%;
-    text-align: center;
+.code-gray {
+    color: var(--gray);
 }
-header {
-    text-align: center;
-    font-size: xx-large;
-    text-shadow: 0 0 20px black;
-    text-decoration-line: underline;
-    text-decoration-color: var(--main-red);
+.code-blue {
+    color: var(--blue);
 }
-#linkList {
-    display: flex;
-    justify-content: center;
-    margin-left: -50%;
+.code-light-blue {
+    color: var(--light-blue);
 }
-#linklist ul {
-    position: fixed;
-    line-height: 2em;
-    margin-top: 15%;
-}
-#linklist li {
-    list-style-type: square;
-    color: var(--main-red);
-}
-#linklist a {
-    color: cornflowerblue;
-    text-shadow: 0 0 5px black;
-    position: fixed;
-    text-decoration: none;
-    transition: .5s ease;
-}
-#linklist a:hover {
-    font-size: xx-large;
+.code-dark-orange {
+    color: var(--dark-orange);
 }
