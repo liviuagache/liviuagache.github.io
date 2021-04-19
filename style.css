@@ -43,7 +43,6 @@ body, html {
     color: var(--dark-orange);
 }
 .typing {
-    border-right: .10em solid var(--white);
     font-size: 2rem;
     overflow: hidden;
     white-space: nowrap;
@@ -51,9 +50,8 @@ body, html {
     animation: type 4s steps(19);
 }
 @keyframes type {
-    0% {width: 0ch;}
-    99% {border-right: .10em solid var(--white);}
-    100% {width: 19ch; border-right: none;} 
+    0% {width: 0ch; border-right: .1em solid var(--white);}
+    100% {width: 19ch; border-right: .1em solid var(--white);} 
 }
 .cursor {
     display: inline-block;
