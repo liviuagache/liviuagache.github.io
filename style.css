@@ -17,8 +17,8 @@ a:link, a:visited, a:hover, a:active {
 body, html {
     background-color: black;
     background-image: linear-gradient(0deg, #485460 0%, #1e272e 100%);
-    background-image: url(images/bg-trianglify.png);
-    height: 100%;
+    background-image: url(images/bg-trianglifyresized.png);
+    min-height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,6 +26,15 @@ body, html {
     font-size: x-large;
     color: var(--main-white);
     pointer-events: none;
+}
+body {
+    text-align: center;
+}
+body::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
 #gray {
     color: var(--gray);
@@ -43,6 +52,7 @@ body, html {
     color: var(--dark-orange);
 }
 .typing {
+    display: inline-block;
     font-size: 2rem;
     overflow: hidden;
     white-space: nowrap;
